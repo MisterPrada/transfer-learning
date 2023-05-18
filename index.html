@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <title>MisterPrada</title>
+</head>
+<body>
+<style>
+    video {
+        border: 1px solid black;
+        width: 400px;
+        height: 400px;
+    }
+
+    span {
+        font-size: 30px;
+    }
+
+    button {
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    video {
+        transform: scaleX(-1);
+    }
+</style>
+
+<center>
+    <video autoplay playsinline muted id="webcam"></video>
+    <br>
+    <span id="classify">Set Process</span>
+    <br>
+
+    <button data-num="0" id="btn-class-1">Class 1</button>
+    <button data-num="0" id="btn-class-2">Class 2</button>
+    <button data-num="0" id="btn-class-3">Class 3</button>
+    <br>
+    <br>
+
+    <button id="btn-class-train">Train</button>
+</center>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.5.0/dist/tf.min.js"></script>
+<script src="main.js"></script>
+</html>
+
+
